@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JINWA2</title>
+</head>
+<body>
+    {% if mesege %}
+    <div style="color: red;">{{mesege}}</div>
+    {% elif pageno %}
+    <div style="color: blue;">{{pageno}}</div>
+    {% endif %}
+    <!-- pageno가 존재할경우 div에 파란색으로 출력해라 -->
+</body>
+</html>

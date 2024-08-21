@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      {% if mesege %}
+        alert('{{mesege}}')
+      {% endif %}
+    </script>
+</head>
+<body> 
+    {% if set2 and set2>=100 %}
+    <div style="color: red;">{{set2}}</div>
+    {% elif set2 and set2 <100 %}
+    <div style="color: blue;">{{set2}}</div>
+    {% endif %}
+
+    {#
+    <!-- 
+    {{set2}}: set2를 html로 출력해라
+                이럴경우 아무것도 찍히지 않는다.
+    {% if set2 >=100 %} :
+            set2를 100과 비교했을때 > set2가 없으면 오류발생            
+    {% if set2 and set2 %} :
+            set2가 존재할때 100이상이라면 --> 
+    #}
+</body>
+</html>

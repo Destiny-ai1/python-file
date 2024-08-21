@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        {% if mesege %}
+            alert('{{mesege}}')
+        {% endif %}
+    </script>
+</head>
+<body>
+    {{mesege}}
+    {% if val and val>=70 %}
+    <div style="color: blue;">합격:{{val}} </div>
+    {% elif val and val<70 %}
+    <div style="color: red;">불합격:{{val}}</div>
+    {% endif %}
+</body>
+</html>

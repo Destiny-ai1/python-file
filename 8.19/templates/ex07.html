@@ -1,0 +1,21 @@
+<!-- 첫번째  두번째에 input 쓰되 서버로 넘기면 서버에서 select 값이 +면 더해서, -면 빼서 출력하시오 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action='http://localhost:8081/add'>
+    <input type="number" name="num1">
+    <select name="op">
+        <option disabled selected>더하기 빼기선택</option>
+        <option>+</option>
+        <option>-</option>
+    </select>
+    <input type="number" name="num2">
+    <button>계산하기</button>
+</form>
+</body>
+</html>
